@@ -24,7 +24,3 @@
   </tr>
 </table>
 
-
-<p align="center">
-  <img src="https://github.com/Krishantx/krishantx/blob/main/cat-work-in-progress.gif" width="50%" />
-</p>
