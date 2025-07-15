@@ -6,9 +6,9 @@
 <table>
     <tr>
     <td>
-      <div class=monke>
-      <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%"  height=80% />
-        </div>
+      <div style="width:200px; height:200px; overflow:hidden;">
+  <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" style="width:100%; height:100%; object-fit:cover;" alt="cropped image">
+</div>
     </td>
     <td>
 <h3>🔧 Currently Working On</h3>
