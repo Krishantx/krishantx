@@ -8,15 +8,12 @@
   <tr>
     <td>
 <h3>📚 What I'm Learning</h3>
-
 <ul>
-  <li><strong>🛡️ Blue Team:</strong> Log analysis, SIEM tuning, detection engineering</li>
-  <li><strong>🗡️ Red Team:</strong> Recon, phishing setups, evasion techniques</li>
-  <li><strong>🌐 Networking:</strong> Packet flows, VPN tunneling, DNS misuse</li>
-  <li><strong>⚙️ Systems:</strong> Linux internals, privilege escalation</li>
-  <li><strong>🧪 Labs:</strong> Proxmox, pfSense, simulated attacks</li>
+  <li><strong>🌐 How the Internet Works:</strong> Protocols, routing, TCP/IP, DNS, and what really happens behind a browser request</li>
+  <li><strong>🛡️ Security Operations (SOC):</strong> Threat detection, log analysis, alert triage, understanding attacker behavior</li>
+  <li><strong>🧠 C & Bash:</strong> Learning low-level programming and shell scripting for better control and visibility (I use Arch btw)</li>
+  <li><strong>⚙️ Python:</strong> Writing tools that simplify daily workflows and automate what I don't want to do manually</li>
 </ul>
-
 </td>
     <td>
       <img src="https://github.com/Krishantx/krishantx/blob/main/cat-work-in-progress.gif" width="300%" />
