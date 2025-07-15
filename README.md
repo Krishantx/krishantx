@@ -4,6 +4,10 @@
 <h1 align="center">I'm Krishant</h1>
 <p align="center"><em>I tinker, break, fix, and build things that matter to me.</em></p>
 <table>
+  </td>
+    <td>
+      <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%"  height=80%/>
+    </td>
   <tr>
     <td>
 <h3>🔧 Currently Working On</h3>
@@ -15,10 +19,7 @@
   <li>Goal: connect effortlessly, even across shifting networks</li>
 </ul>
 
-</td>
-    <td>
-      <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%" />
-    </td>
+
   </tr>
 </table>
 <table>
