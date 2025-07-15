@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 
 ![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=krishantx&show_icons=true&theme=radical&hide=rank)
-
+![Hi there](https://tenor.com/view/cat-work-in-progress-progress-gif-6698056592000242882)
 <img align= "center" width=400 src="https://tenor.com/view/cat-work-in-progress-progress-gif-6698056592000242882" alt="code" />
