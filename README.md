@@ -7,7 +7,7 @@
     <tr>
     <td>
       <div style="width:200px; height:200px; overflow:hidden;">
-  <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" style="width:100%; height:80%; object-fit:cover;" alt="cropped image">
+  <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" style="width:300%; height:80%; object-fit:cover;" alt="cropped image">
 </div>
     </td>
     <td>
