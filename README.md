@@ -6,7 +6,9 @@
 <table>
   </td>
     <td>
-      <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%"  height=80%/>
+      <div class=monke>
+      <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%"  height=80 />
+        </div>
     </td>
   <tr>
     <td>
