@@ -4,7 +4,6 @@
 <h1 align="center">I'm Krishant</h1>
 <p align="center"><em>I tinker, break, fix, and build things that matter to me.</em></p>
 <table>
-  </td>
     <td>
       <div class=monke>
       <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%"  height=80 />
@@ -20,7 +19,7 @@
   <li>Prioritizing safety, accessibility, and reliability</li>
   <li>Goal: connect effortlessly, even across shifting networks</li>
 </ul>
-
+</td>
 
   </tr>
 </table>
