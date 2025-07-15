@@ -19,7 +19,7 @@
 
 </td>
     <td>
-      <img src="https://github.com/Krishantx/krishantx/blob/main/cat-work-in-progress.gif" width="50%" />
+      <img src="https://github.com/Krishantx/krishantx/blob/main/cat-work-in-progress.gif" width="300%" />
     </td>
   </tr>
 </table>
