@@ -17,7 +17,7 @@
 
 </td>
     <td>
-      <img src="https://tenor.com/view/coding-scaler-create-impact-monkey-programmer-gif-24991476" width="300%" />
+      <img src="https://github.com/Krishantx/krishantx/blob/main/coding-scaler.gif" width="300%" />
     </td>
   </tr>
 </table>
