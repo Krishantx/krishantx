@@ -3,7 +3,24 @@
 
 <h1 align="center">I'm Krishant</h1>
 <p align="center"><em>I tinker, break, fix, and build things that matter to me.</em></p>
+<table>
+  <tr>
+    <td>
+<h3>🔧 Currently Working On</h3>
 
+<ul>
+  <li>Setting up a secure SSH server for remote access to my personal system</li>
+  <li>Designed to work from anywhere in the world</li>
+  <li>Prioritizing safety, accessibility, and reliability</li>
+  <li>Goal: connect effortlessly, even across shifting networks</li>
+</ul>
+
+</td>
+    <td>
+      <img src="https://tenor.com/view/coding-scaler-create-impact-monkey-programmer-gif-24991476" width="300%" />
+    </td>
+  </tr>
+</table>
 <table>
   <tr>
     <td>
