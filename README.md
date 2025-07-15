@@ -17,4 +17,3 @@ Here are some ideas to get you started:
 
 ![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=krishantx&show_icons=true&theme=radical&hide=rank)
 ![Hi there](https://github.com/Krishantx/krishantx/blob/main/cat-work-in-progress.gif)
-<img align= "center" width=400 src="https://github.com/Krishantx/krishantx/blob/main/cat-work-in-progress.gif" alt="code" />
