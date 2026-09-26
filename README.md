@@ -8,18 +8,19 @@ I make microservices measurable. Backend / distributed-systems engineer by train
 
 ---
 
-#### Currently building: [microservice-gateway-platform](https://github.com/Krishantx/microservice-gateway-platform)
+#### Currently building: [raft-based-key-value-store](https://github.com/Krishantx/raft-based-distributed-key-value-store)
 
-A self-contained microservices platform — custom API gateway, Eureka service discovery, token-bucket rate limiter, three services, all under one `docker compose up`. Built it from scratch, then load-tested it until the claims were true:
+A distributed key-value store that runs on Raft consensus I wrote from scratch in **Go + gRPC** — no Hashicorp raft, no libraries for the hard part. `raft-aware-proxy` fans client ops to the leader, nodes campaign with a **voting protocol**, keep control with **heartbeats**, and applied log entries land in an in-memory KV repo.
 
-- Custom **Spring Boot 3.5 / Java 21** API gateway as a filter chain: JWT auth (HS256, 30-min TTL), correlation-ID tracing, YAML-declared routing across Eureka-discovered services
-- **k6**, 100 concurrent users, 60 s sustained: **269 authenticated req/s at p95 ≈ 94 ms, zero errors**; 401s told "no" in ~5 ms
-- **69 unit/integration tests**, JaCoCo ~99% lines / ~98% branches, **CI green on every push** [![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
-- Token-bucket rate limiter (Redis + PostgreSQL, fail-open when it goes down — the gateway degrades, it doesn't die), OpenTelemetry tracing end to end
+It's mid-flight (heartbeat keep-alive is in, replication edge cases are the current boss fight). It also has my "you don't get to claim it until it's tested" rule attached, so tests land before this goes anywhere near my resume.
+
+#### Also done: [microservice-gateway-platform](https://github.com/Krishantx/microservice-gateway-platform)
+
+A self-contained microservices lab — custom Spring Boot API gateway, Eureka discovery, token-bucket rate limiter, three services, one `docker compose up`, k6-tested until the claims were true: **269 authenticated req/s at p95 ≈ 94 ms, zero errors**, 69 tests at ~99% line coverage, CI green on every push. [![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
 
 #### The rest of me
 - 300+ LeetCode problems — the boring reps so the fun parts stay fast
 - My honest growth log lives in a private repo (this one is public-facing, that one is not)
 - Open to backend / platform engineering roles — reach out on [LinkedIn](https://www.linkedin.com/in/krishant-basotra/)
 
-**Things I speak:** Java 21 · Spring Boot · Redis · PostgreSQL · Docker Compose · k6 · OpenTelemetry
+**Things I speak:** Go · gRPC · Java 21 · Spring Boot · Redis · PostgreSQL · Docker Compose · k6 · OpenTelemetry
