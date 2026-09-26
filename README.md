@@ -19,7 +19,7 @@ It's mid-flight (heartbeat keep-alive is in, replication edge cases are the curr
 A self-contained microservices lab — custom Spring Boot API gateway, Eureka discovery, token-bucket rate limiter, three services, one `docker compose up`, k6-tested until the claims were true: **269 authenticated req/s at p95 ≈ 94 ms, zero errors**, 69 tests at ~99% line coverage, CI green on every push. [![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
 
 #### The rest of me
-- 300+ LeetCode problems — the boring reps so the fun parts stay fast
+- 200+ LeetCode problems — the boring reps so the fun parts stay fast
 - My honest growth log lives in a private repo (this one is public-facing, that one is not)
 - Open to backend / platform engineering roles — reach out on [LinkedIn](https://www.linkedin.com/in/krishant-basotra/)
 
