@@ -8,15 +8,15 @@ I make microservices measurable. Backend / distributed-systems engineer by train
 
 ---
 
+#### Flagship: [microservice-gateway-platform](https://github.com/Krishantx/microservice-gateway-platform)
+
+A self-contained microservices lab — custom Spring Boot API gateway, Eureka discovery, a Redis-backed token-bucket rate limiter with a PostgreSQL fallback, three services, one `docker compose up` bringing up 9 services. k6-tested until the claims were true: **~270 authenticated req/s at p95 ≈ 94 ms, zero errors**, 69 tests at ~99% line coverage, CI green on every push to `main`. [![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
+
 #### Currently building: [raft-based-key-value-store](https://github.com/Krishantx/raft-based-distributed-key-value-store)
 
 A distributed key-value store that runs on Raft consensus I wrote from scratch in **Go + gRPC** — no Hashicorp raft, no libraries for the hard part. `raft-aware-proxy` fans client ops to the leader, nodes campaign with a **voting protocol**, keep control with **heartbeats**, and applied log entries land in an in-memory KV repo.
 
-It's mid-flight (heartbeat keep-alive is in, replication edge cases are the current boss fight). It also has my "you don't get to claim it until it's tested" rule attached, so tests land before this goes anywhere near my resume.
-
-#### Also done: [microservice-gateway-platform](https://github.com/Krishantx/microservice-gateway-platform)
-
-A self-contained microservices lab — custom Spring Boot API gateway, Eureka discovery, token-bucket rate limiter, three services, one `docker compose up`, k6-tested until the claims were true: **269 authenticated req/s at p95 ≈ 94 ms, zero errors**, 69 tests at ~99% line coverage, CI green on every push. [![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
+It's mid-flight (heartbeat keep-alive is in, replication edge cases are the current boss fight). It also has my "you don't get to claim it until it's tested" rule attached, so tests land before this goes anywhere near my resume — which is why the gateway leads this page instead.
 
 #### The rest of me
 - 200+ LeetCode problems — the boring reps so the fun parts stay fast
