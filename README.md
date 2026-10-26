@@ -1,26 +1,113 @@
-<!-- heya, welcome to the repo. grab a seat. -->
+<!-- heya. you found my corner of github. -->
 
-### Hey, I'm Krishant.
+### Hey,
 
-I make microservices measurable. Backend / distributed-systems engineer by training, security analyst by day job — I got tired of chasing detections manually, so now I build backend pipelines that do it for me, and flag them with performance numbers I can actually defend.
+I build backend systems, occasionally break distributed ones, and then spend an unreasonable amount of time figuring out **why**.
 
-![me on weekends](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+Mostly **Go, Java, Spring Boot, gRPC, Redis and PostgreSQL**.
+
+I'm especially interested in the stuff that happens after `"it works on my machine"` — concurrency, distributed systems, failure handling, observability, performance, and what happens when one innocent-looking service suddenly has five friends and a network between them.
+
+![me explaining why this is definitely not a race condition](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 
 ---
 
-#### Flagship: [microservice-gateway-platform](https://github.com/Krishantx/microservice-gateway-platform)
+### 🕸️ Currently fighting: [raft-based-distributed-key-value-store](https://github.com/Krishantx/raft-based-distributed-key-value-store)
 
-A self-contained microservices lab — custom Spring Boot API gateway, Eureka discovery, a Redis-backed token-bucket rate limiter with a PostgreSQL fallback, three services, one `docker compose up` bringing up 9 services. k6-tested until the claims were true: **~270 authenticated req/s at p95 ≈ 94 ms, zero errors**, 69 tests at ~99% line coverage, CI green on every push to `main`. [![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
+I'm building a distributed key-value store in **Go + gRPC**, with the Raft consensus algorithm implemented from scratch.
 
-#### Currently building: [raft-based-key-value-store](https://github.com/Krishantx/raft-based-distributed-key-value-store)
+No Hashicorp Raft. No consensus library doing the scary bits for me.
 
-A distributed key-value store that runs on Raft consensus I wrote from scratch in **Go + gRPC** — no Hashicorp raft, no libraries for the hard part. `raft-aware-proxy` fans client ops to the leader, nodes campaign with a **voting protocol**, keep control with **heartbeats**, and applied log entries land in an in-memory KV repo.
+Five independent nodes elect a leader, exchange heartbeats, replicate logs, survive elections, and eventually agree that `"foo" = "bar"` — which turns out to require a suspicious amount of engineering.
 
-It's mid-flight (heartbeat keep-alive is in, replication edge cases are the current boss fight). It also has my "you don't get to claim it until it's tested" rule attached, so tests land before this goes anywhere near my resume — which is why the gateway leads this page instead.
+There's also a `raft-aware-proxy` sitting in front of the cluster so clients don't have to care which node currently wears the crown.
 
-#### The rest of me
-- 200+ LeetCode problems — the boring reps so the fun parts stay fast
-- My honest growth log lives in a private repo (this one is public-facing, that one is not)
-- Open to backend / platform engineering roles — reach out on [LinkedIn](https://www.linkedin.com/in/krishant-basotra/)
+**Currently working on:** log replication, commit semantics, leader failure, and the various creative ways distributed systems find to humble me.
 
-**Things I speak:** Go · gRPC · Java 21 · Spring Boot · Redis · PostgreSQL · Docker Compose · k6 · OpenTelemetry
+Still a work in progress. It earns the résumé spot when the tests say it does.
+
+---
+
+### ⚙️ The one that survived the tests: [microservice-gateway-platform](https://github.com/Krishantx/microservice-gateway-platform)
+
+A microservices playground that got slightly out of hand.
+
+It started as *"I'll build an API gateway"* and somehow became:
+
+**Spring Boot 3.5 · Java 21 · Eureka · Redis · PostgreSQL · Docker · OpenTelemetry · k6**
+
+Under the hood:
+
+- custom API gateway + filter chain
+- JWT authentication
+- Eureka service discovery
+- token-bucket rate limiting
+- Redis hot path with PostgreSQL persistence
+- correlation-ID tracing
+- YAML-based routing
+- containerized services
+- CI + automated tests
+
+Then I pointed k6 at it until I had numbers I could actually defend:
+
+**~269 authenticated req/s · p95 94 ms · 0 errors**
+
+And because `"trust me bro"` isn't a testing strategy:
+
+**69 tests · ~99% line coverage · ~98% branch coverage**
+
+[![CI](https://github.com/Krishantx/microservice-gateway-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishantx/microservice-gateway-platform/actions)
+
+---
+
+### 🧪 Other experiments
+
+I have a habit of turning things I want to understand into projects.
+
+**[Rate Limiter as a Service](https://github.com/Krishantx/Rate-Limiter-as-a-Service)**  
+Token-bucket rate limiting backed by Redis + PostgreSQL, configurable per client and endpoint.
+
+**Distributed Task Queue**  
+PostgreSQL-backed workers using `FOR UPDATE SKIP LOCKED`, because apparently databases can be pretty good queues when you ask nicely.
+
+**Zero-Knowledge Cloud Storage**  
+Client-side encrypted storage where the server gets your ciphertext and absolutely none of your secrets.
+
+And then there's the occasional smaller project created because I thought:
+
+> "Wait... how does that actually work?"
+
+Those tend to become repositories.
+
+---
+
+### 🧠 Side quests
+
+- 200+ LeetCode problems
+- learning distributed systems by implementing the painful parts
+- slowly getting better at Go
+- occasionally discovering that the bug was, in fact, a goroutine
+- measuring things before putting numbers on a résumé
+- trying to leave every codebase slightly less cursed than I found it
+
+---
+
+### 🛠️ Things I speak
+
+`Go` · `gRPC` · `Java 21` · `Spring Boot` · `PostgreSQL` · `Redis` · `Docker` · `REST` · `OpenTelemetry` · `Prometheus` · `Grafana` · `k6`
+
+---
+
+### 🕷️ What's next?
+
+I'm looking for **backend / platform / distributed-systems engineering** roles where I can work on systems that have interesting problems hiding underneath apparently simple APIs.
+
+Preferably the kind where **latency, concurrency, reliability, scale, or distributed state** eventually ruin someone's afternoon.
+
+Those are usually the fun ones.
+
+You can find me on [LinkedIn](https://www.linkedin.com/in/krishant-basotra/).
+
+---
+
+*Still learning. Still shipping. Still checking whether the leader is alive.*
