@@ -67,10 +67,10 @@ I have a habit of turning things I want to understand into projects.
 **[Rate Limiter as a Service](https://github.com/Krishantx/Rate-Limiter-as-a-Service)**  
 Token-bucket rate limiting backed by Redis + PostgreSQL, configurable per client and endpoint.
 
-**Distributed Task Queue**  
+**[Distributed Task Queue]()**  
 PostgreSQL-backed workers using `FOR UPDATE SKIP LOCKED`, because apparently databases can be pretty good queues when you ask nicely.
 
-**Zero-Knowledge Cloud Storage**  
+**Zero-Knowledge Cloud Storage[](https://github.com/Krishantx/Secure-File-Storage)**  
 Client-side encrypted storage where the server gets your ciphertext and absolutely none of your secrets.
 
 And then there's the occasional smaller project created because I thought:
